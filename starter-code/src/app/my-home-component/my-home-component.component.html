@@ -1,15 +1,10 @@
-<p>
-  my-home-component works!
-</p>
 
 <div class="container">
   <div class="row">
-    <div class="column">
-      <div *ngFor="let movie of movies">
-        <h1>ROOM{{movie.id}}</h1>
+      <div class="col-2 movieImg" *ngFor="let movie of movies">
+        <h3>ROOM{{movie.id}}</h3>
         <img src="{{movie.poster}}">
-        <h4>{{movie.title}}</h4>
+        <p><a href="movie/:id">{{movie.title}}</a></p>
       </div>
     </div>
-  </div>
 </div>

@@ -21,6 +21,6 @@ export class MoviesService {
     return this.movies;
   }
   getMovie(id) {
-    return this.movies[id]
+    return this.movies[id-1]
   }
 }

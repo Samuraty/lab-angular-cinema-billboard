@@ -4,7 +4,7 @@
       <div class="col-2 movieImg" *ngFor="let movie of movies">
         <h3>ROOM{{movie.id}}</h3>
         <img src="{{movie.poster}}">
-        <p><a href="movie/:id">{{movie.title}}</a></p>
+        <p><a [routerLink]="['/movie', movie.id]">{{movie.title}}</a></p>
       </div>
     </div>
 </div>
